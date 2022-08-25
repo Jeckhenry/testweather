@@ -24,7 +24,7 @@ jobs:
       - name: 'Set up Python'
         uses: actions/setup-python@v1
         with:
-          python-version: 3.10
+          python-version: 3.8
         # 安装脚本所需的依赖
       - name: 'Install requests'
         run: pip install requests
