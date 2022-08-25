@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v2
         # 安装初始化python
       - name: 'Set up Python'
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v3.8
         with:
           python-version: 3.8
         # 安装脚本所需的依赖
