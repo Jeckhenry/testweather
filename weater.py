@@ -3,7 +3,7 @@
 
 import requests, json
 import os
-import datetime
+from datetime import datetime
 
 
 
@@ -53,7 +53,7 @@ def main():
             ganmao = d["data"]["ganmao"] #感冒指数
             tips = d["data"]["forecast"][0]["notice"] #温馨提示
             # 天气提示内容 
-            nowDay = datetime.datetime.now()
+            nowDay = datetime.now()
 #             endDay = datetime.date(nowDay.year, nowDay.month, nowDay.day)
 #             startDay = datetime.date(2019, 3, 27)
 #             dayLen = endDay - startDay
