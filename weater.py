@@ -55,11 +55,11 @@ def main():
             tips = d["data"]["forecast"][0]["notice"] #温馨提示
             # 天气提示内容 
             nowDay = datetime.now(timezone.utc)
-            endDay = datetime.date(nowDay.year, nowDay.month, nowDay.day)
-            startDay = datetime.date(2019, 3, 27)
-            dayLen = endDay - startDay
+#             endDay = datetime.date(nowDay.year, nowDay.month, nowDay.day)
+#             startDay = datetime.date(2019, 3, 27)
+#             dayLen = endDay - startDay
 #             print(dayLen.days)
-            tdwt = "宝贝，今天是我们在一起的第"+ dayLen.days +"天，希望宝贝开开心心的，爱你😘\n" + "【今日份天气】\n城市： " + parent + city + \
+            tdwt = "宝贝，今天是我们在一起的第天，希望宝贝开开心心的，爱你😘\n" + "【今日份天气】\n城市： " + parent + city + \
                    "\n日期： " + date + "\n星期: " + week + "\n天气: " + weather_type + "\n温度: " + wendu_high + " / "+ wendu_low + "\n湿度: " + \
                     shidu + "\nPM25: " + pm25 + "\nPM10: " + pm10 + "\n空气质量: " + quality + \
                    "\n风力风向: " + fx + fl + "\n感冒指数: "  + ganmao + "\n温馨提示： " + tips + "\n更新时间: " + update_time + "\n✁-----------------------------------------\n" + get_iciba_everyday()
