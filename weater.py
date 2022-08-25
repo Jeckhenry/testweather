@@ -3,7 +3,7 @@
 
 import requests, json
 import os
-import datetime
+# import datetime
 
 
 
@@ -53,11 +53,11 @@ def main():
             ganmao = d["data"]["ganmao"] #感冒指数
             tips = d["data"]["forecast"][0]["notice"] #温馨提示
             # 天气提示内容 
-            nowDay = datetime.datetime.now()
-            endDay = datetime.date(nowDay.year, nowDay.month, nowDay.day)
-            startDay = datetime.date(2019, 3, 27)
-            dayLen = endDay - startDay
-            print(dayLen.days)
+            # nowDay = datetime.datetime.now()
+            # endDay = datetime.date(nowDay.year, nowDay.month, nowDay.day)
+            # startDay = datetime.date(2019, 3, 27)
+            # dayLen = endDay - startDay
+            # print(dayLen.days)
             tdwt = "【今日份天气】\n城市： " + parent + city + \
                    "\n日期： " + date + "\n星期: " + week + "\n天气: " + weather_type + "\n温度: " + wendu_high + " / "+ wendu_low + "\n湿度: " + \
                     shidu + "\nPM25: " + pm25 + "\nPM10: " + pm10 + "\n空气质量: " + quality + \
