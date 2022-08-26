@@ -13,8 +13,8 @@ def get_iciba_everyday():
     bee = eed.json()  #返回的数据
     english = bee['content']
     zh_CN = bee['note']
-    str = '【奇怪的知识】\n' + english + '\n' + zh_CN
-    return str
+    strs = '【奇怪的知识】\n' + english + '\n' + zh_CN
+    return strs
 
 def ServerPush(info): #Server酱推送
     api = "https://sc.ftqq.com/{}.send".format(SCKEY)
