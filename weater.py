@@ -55,7 +55,7 @@ def main():
             tips = d["data"]["forecast"][0]["notice"] #温馨提示
             # 天气提示内容 
             nowDay = datetime.now(timezone.utc)
-#             endDay = datetime.date(nowDay.year, nowDay.month, nowDay.day)
+            endDay = datetime.date(nowDay.year, nowDay.month, nowDay.day)
 #             startDay = datetime.date(2019, 3, 27)
 #             dayLen = endDay - startDay
 #             print(dayLen.days)
