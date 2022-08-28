@@ -1,13 +1,12 @@
 # name属性用来指定这个工作流的名字
-name: GITHUB ACITON Weater
+name: GITHUBACITONWeater
 
 # 这个部分用来指定能够触发工作流执行的事件
 on:
+ workflow_dispatch:
   # 当对分支main进行push操作的时候，这个工作流就被触发了
-  push:
-    branches: [ main ]
-  schedule:
-    - cron: 32 0 * * *
+  # push:
+  #   branches: [ main ]
 
 
 
@@ -29,6 +28,8 @@ jobs:
         # 安装脚本所需的依赖
       - name: 'Install requests'
         run: pip install requests
+#       - name: 'Install datetime'
+#         run: pip install datetime
         # 运行脚本
       - name: 'Working'
         env:	#添加环境变量
