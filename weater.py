@@ -53,7 +53,7 @@ def main():
             # 天气提示内容 
             nowDay = datetime.now(timezone.utc)
             endDay = date(nowDay.year, nowDay.month, nowDay.day)
-            startDay = date(2019, 3, 27)
+            startDay = date(2020, 3, 27)
             dayLen = endDay - startDay
             print(dayLen.days)
             tdwt = "宝贝，今天是我们在一起的第" + str(dayLen.days) + "天，希望宝贝开开心心的，爱你😘\n" + "【今日份天气】\n城市： " + parent + city + \
