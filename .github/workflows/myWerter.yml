@@ -21,7 +21,7 @@ jobs:
     # 首先copy git仓库到虚拟机上
       - name: Checkout
         uses: actions/checkout@v2
-        # 安装初始化python
+        # 安装初始化python··
       - name: 'Set up Python'
         uses: actions/setup-python@v1
         with:
